@@ -1,0 +1,24 @@
+manifest:
+  defaults:
+    remote: github
+    revision: master
+
+  remotes:
+    - name: github
+      url-base: ssh://git@github.com
+
+    - name: yoctoproject
+      url-base: git://git.yoctoproject.org
+
+  projects:
+    - name: poky
+      path: poky
+      remote: yoctoproject
+      revision: refs/tags/yocto-3.0.2
+
+  self:
+    path: meta-m1cha
+
+  configs:
+    zephyr:
+      disabled: true
