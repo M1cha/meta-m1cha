@@ -7,10 +7,21 @@ manifest:
     - name: github
       url-base: ssh://git@github.com
 
+    - name: openembedded
+      url-base: git://git.openembedded.org
+
     - name: yoctoproject
       url-base: git://git.yoctoproject.org
 
   projects:
+    - name: linux-sunxi/meta-sunxi
+      path: meta-sunxi
+
+    - name: meta-openembedded
+      path: meta-openembedded
+      remote: openembedded
+      revision: thud
+
     - name: poky
       path: poky
       remote: yoctoproject
