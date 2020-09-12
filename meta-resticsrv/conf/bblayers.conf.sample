@@ -9,4 +9,8 @@ BBLAYERS ?= " \
   ##OEROOT##/meta \
   ##OEROOT##/meta-poky \
   ##OEROOT##/meta-yocto-bsp \
+  ##OEROOT##/../meta-openembedded/meta-oe \
+  ##OEROOT##/../meta-sunxi \
+  ##OEROOT##/../m1cha/meta \
+  ##OEROOT##/../m1cha/meta-resticsrv \
   "

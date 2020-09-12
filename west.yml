@@ -20,12 +20,12 @@ manifest:
     - name: meta-openembedded
       path: meta-openembedded
       remote: openembedded
-      revision: thud
+      revision: dunfell
 
     - name: poky
       path: poky
       remote: yoctoproject
-      revision: refs/tags/yocto-3.0.2
+      revision: dunfell
 
   self:
     path: meta-m1cha
