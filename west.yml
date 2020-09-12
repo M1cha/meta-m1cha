@@ -30,7 +30,3 @@ manifest:
   self:
     path: meta-m1cha
     west-commands: scripts/west-commands.yml
-
-  configs:
-    zephyr:
-      disabled: true
