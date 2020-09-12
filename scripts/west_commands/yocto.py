@@ -21,11 +21,14 @@ class Yocto(WestCommand):
                                        description=self.description)
 
     def do_run(self, args, unknown_args):
+        env = os.environ.copy()
+        del env['ZEPHYR_BASE']
+
         args = [
             os.path.join(self.project_dir, 'scripts/yoctoshell.sh'),
         ]
 
-        p = subprocess.Popen(args, cwd=self.top_dir)
+        p = subprocess.Popen(args, cwd=self.top_dir, env=env)
         p.communicate()
 
         if p.returncode:
