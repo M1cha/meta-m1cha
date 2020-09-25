@@ -28,5 +28,5 @@ manifest:
       revision: dunfell
 
   self:
-    path: meta-m1cha
+    path: m1cha
     west-commands: scripts/west-commands.yml
