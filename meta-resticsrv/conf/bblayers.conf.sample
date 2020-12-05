@@ -10,6 +10,7 @@ BBLAYERS ?= " \
   ##OEROOT##/meta-poky \
   ##OEROOT##/meta-yocto-bsp \
   ##OEROOT##/../meta-openembedded/meta-oe \
+  ##OEROOT##/../meta-rust \
   ##OEROOT##/../meta-sunxi \
   ##OEROOT##/../m1cha/meta \
   ##OEROOT##/../m1cha/meta-resticsrv \

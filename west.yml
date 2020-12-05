@@ -22,6 +22,9 @@ manifest:
       remote: openembedded
       revision: dunfell
 
+    - name: meta-rust/meta-rust
+      path: meta-rust
+
     - name: poky
       path: poky
       remote: yoctoproject
