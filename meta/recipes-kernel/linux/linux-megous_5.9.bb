@@ -1,9 +1,9 @@
-KBRANCH ?= "orange-pi-5.8"
+KBRANCH ?= "orange-pi-5.9"
 
 require recipes-kernel/linux/linux-yocto.inc
 
-SRCREV_machine ?= "3a787c50799377b92d9f2271a62024859394caef"
-SRCREV_meta ?= "f79c81e7a7d995f0ddb3114000555b25f4649373"
+SRCREV_machine ?= "6f2d95b9833e4e2395ca58056c1489fa77eb5810"
+SRCREV_meta ?= "7329d33cf8f25f433ce8ca95787e1743344f7c5d"
 
 KCONFIG_MODE = "--alldefconfig"
 KBUILD_DEFCONFIG ?= "orangepi_defconfig"
@@ -12,7 +12,7 @@ SRC_URI = "git://github.com/megous/linux;protocol=https;name=machine;branch=${KB
            git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=yocto-5.8;destsuffix=${KMETA}"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
-LINUX_VERSION ?= "5.8.11"
+LINUX_VERSION ?= "5.9.11"
 
 DEPENDS += "${@bb.utils.contains('ARCH', 'x86', 'elfutils-native', '', d)}"
 DEPENDS += "openssl-native util-linux-native"
