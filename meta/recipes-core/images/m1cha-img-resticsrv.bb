@@ -17,4 +17,5 @@ IMAGE_INSTALL += " \
     iperf3 \
     restic-rest-server \
     ssh-authorized-keys \
+    wireguard-tools \
 "
