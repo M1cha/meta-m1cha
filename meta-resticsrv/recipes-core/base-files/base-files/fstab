@@ -1,4 +1,4 @@
 # <file system> <dir> <type> <options> <dump> <pass>
 /dev/root / auto defaults 1 1
-/dev/mmcblk0p2 /media/data ext4 rw,nodev,noexec,nosuid,relatime,data=journal,journal_checksum,errors=remount-ro,nofail 0 2
+/dev/mmcblk0p2 /media/data ext4 rw,nodev,noexec,nosuid,relatime,data=journal,journal_checksum,errors=remount-ro,nofail,x-systemd.before=systemd-networkd.service 0 2
 /dev/sda1 /media/backup auto rw,nodev,noexec,nosuid,relatime,data=journal,journal_checksum,errors=remount-ro,nofail 0 2
