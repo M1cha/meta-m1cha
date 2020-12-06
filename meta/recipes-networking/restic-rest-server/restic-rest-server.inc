@@ -8,8 +8,7 @@ DEPENDS += "openssl"
 inherit useradd systemd
 
 USERADD_PACKAGES = "${PN}"
-USERADD_PARAM_${PN} = " --system -s /bin/false -u 1200 -N -g restic-rest restic-rest"
-GROUPADD_PARAM_${PN} = "-g 1200 restic-rest"
+USERADD_PARAM_${PN} = " --system -d / -M --shell /bin/false restic-rest"
 
 SYSTEMD_SERVICE_${PN} = "restic-rest-server.service"
 
