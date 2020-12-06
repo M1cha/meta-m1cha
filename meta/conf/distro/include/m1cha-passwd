@@ -1,0 +1,2 @@
+systemd-network:x:997:996::/:/bin/nologin
+restic-rest:x:1200:1200::/:/bin/false
